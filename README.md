@@ -1,2 +1,2 @@
 # Thomas-luckyclover.github.io
-The website forSoftware Engineering
+The website for Software Engineering
