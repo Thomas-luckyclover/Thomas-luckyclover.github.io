@@ -1,0 +1,30 @@
+div{
+            display: grid;
+            grid-template-columns: auto auto; /* Tạo 2 cột có chiều rộng tự động */
+            gap: 10px; /* Tạo khoảng cách giữa các ô */
+            background-color: #F6F1E9;
+            padding: 100px;
+} 
+
+body{
+    background-color: #FF9A00;
+	font-variant: small-caps;
+	font-family: Arial, "Times New Roman", sans-serif;
+	font-size: 72%;
+}
+ 
+ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+}
+
+.current{
+	text-transform: uppercase;
+	background-color:red; 
+}
+
+nav {
+    text-decoration: none;
+}
