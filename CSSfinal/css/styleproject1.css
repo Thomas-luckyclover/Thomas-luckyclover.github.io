@@ -1,0 +1,175 @@
+body{
+    background-color: #da8837;
+     margin: 0px; /*để xóa rìa static */
+}
+
+img{
+    width: 15%;
+}
+
+
+nav li{
+    list-style-type: none;
+}
+
+.general_color{
+ color: #a4d143;
+}
+
+nav a:hover{
+     color: #d4bf1f;
+}
+
+hr{
+    border-width: 5px;
+    border-style: dotted none none;
+    border-color: grey;
+}
+/* Introduction */
+.Introduction{
+text-align: center;
+}
+
+.Introduction h1{
+  font-family: "Mr Dafoe", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  color: #d17e43;
+}
+
+
+.Introduction p{
+    font-family: sans-serif;
+    color: #d17e43;
+    font-weight: 400; /* độ đậm */
+    font-size: 180%
+    
+}
+
+
+#Navbar{
+    display: flex;
+    justify-content:space-around;
+}
+
+#Navbar ul{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagebackground {
+    background-image: url('https://images.pexels.com/photos/784633/pexels-photo-784633.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+}
+
+#introduction{
+    text-align: center;
+
+}
+
+#introduction p{
+    width: 30%;
+    margin: 0 auto;
+}
+
+/* #introduction h1{
+    color: #d17e43;
+} */
+
+#What{
+    text-align: center;
+    margin: 0 20%;
+}
+
+#What>div{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+#What .item{
+    flex: 1;
+}   /* phần tử co giãn khi thu nhỏ trang */
+
+
+#What img{
+width: 80%;
+}
+
+
+footer{
+    background-color: #e0782e;
+    text-align: center;
+    color: #121212;
+    padding: 3rem 0;
+}
+
+#Spanish{
+            display: grid;
+            grid-template-columns: auto auto; /* Tạo 2 cột có chiều rộng tự động */
+            gap: 20px; /* Tạo khoảng cách giữa các ô */
+            background-color: antiquewhite;
+            padding: 10px;
+
+}
+
+.imgsize img {
+  width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của khung chứa */
+  max-width: 100%; /* Giúp ảnh không bị tràn ra ngoài */
+  height: auto; /* Giữ tỷ lệ khung hình */
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các mục xuống hàng khi không đủ chỗ */
+  justify-content: center; /* Căn giữa các ảnh theo chiều ngang */
+  gap: 15px; /* Khoảng cách giữa các ảnh */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-gallery img {
+  flex: 1 1 calc(25% - 15px); /* Tính toán kích thước cho mỗi ảnh */
+  /* flex: grow shrink basis */
+  /* 1: cho phép ảnh mở rộng */
+  /* 1: cho phép ảnh thu hẹp */
+  /* calc(25% - 15px): mỗi ảnh cố gắng chiếm 25% chiều rộng trừ đi gap */
+
+  max-width: 250px; /* Giới hạn chiều rộng tối đa của từng ảnh */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#Japan img:hover {
+  transform: scale(1.05);
+}
+
+#Japan {
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các ảnh xuống dòng */
+  justify-content: center; /* Căn giữa các ảnh */
+  gap: 15px; /* Khoảng cách giữa các ảnh */
+}
+
+#Japan img {
+  /* Mỗi ảnh cố gắng có chiều rộng khoảng 450px */
+  flex: 0 1 450px; 
+  /* Hoặc sử dụng 'width' cố định */
+  /* width: 450px; */
+
+  height: 250px; /* Chiều cao cố định */
+  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
