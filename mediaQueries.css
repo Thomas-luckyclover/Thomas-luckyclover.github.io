@@ -1,0 +1,75 @@
+
+body {
+    background-color: #dedede;
+}
+
+h1 {
+    text-align: center;
+    font-family:Arial, sans-serif;
+    font-size: 32px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-family:Arial, sans-serif;
+}
+
+p {
+   font-size: 25px;
+   font-family:Arial, sans-serif;
+}
+
+img{
+  width:100%;
+}
+
+
+p{
+  text-align:center;
+}
+
+div img{
+    width:150px;
+    height: 150px;
+    display:block;
+    margin:auto;
+}
+
+div{
+  display: inline-block;
+   width: 100%; /*mobile view */
+  margin: 5px;
+  padding: 2px;
+}
+
+/* Tablet view: (≥ 772px) → 2 cột */
+@media (min-width: 772px) {
+  div {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top; /*căn lề trên để không bị méo */
+  }
+
+  div img {
+    max-height: 30vh;
+    width: auto;      /* giữ tỉ lệ gốc */
+    margin: auto;
+    display: block;
+  }
+}
+
+
+/* Large screnn >=998px*/
+@media (min-width: 998px) {
+  div {
+    width: 30%;
+  }
+}
+
+/*Nguyên tắc thừa kế: Large screen thừa kế 2 div trong 772px, ko cần viết lại. Tương tự tablet cx thừa kế một số đặc điểm của mobile */
+
+
+
+
+
